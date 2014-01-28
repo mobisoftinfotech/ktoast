@@ -12,6 +12,20 @@
 #import <QuartzCore/QuartzCore.h>
 
 @implementation KToast
+
++ (void)kToastWithMessage:(NSString*)message
+                     withFontName:(NSString*)fontName
+                     withFontSize:(float)size
+                     showAtHeight:(float)height
+{
+   KToast *kToast = [[KToast alloc]initWithKToastWithMessage:message
+                                withFontName:fontName
+                                withFontSize:size
+                                showAtHeight:height];
+    
+    [kToast show];
+}
+
 - (id)initWithKToastWithMessage:(NSString*)message withFontName:(NSString*)fontName withFontSize:(float)size showAtHeight:(float)height
 {
     self = [super init];

@@ -24,7 +24,16 @@
     
 }
 //MEMBER FUNCTIONS
-- (id)initWithKToastWithMessage:(NSString*)message withFontName:(NSString*)fontName withFontSize:(float)size showAtHeight:(float)height;
++ (void)kToastWithMessage:(NSString*)message
+                     withFontName:(NSString*)fontName
+                     withFontSize:(float)size
+                     showAtHeight:(float)height;
+
+
+- (id)initWithKToastWithMessage:(NSString*)message
+                   withFontName:(NSString*)fontName
+                   withFontSize:(float)size
+                   showAtHeight:(float)height;
 
 - (void)show;
 

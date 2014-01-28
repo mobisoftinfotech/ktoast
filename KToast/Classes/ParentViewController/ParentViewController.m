@@ -78,9 +78,10 @@
     
     
     //AND THE ONLY THING YOU HAVE TO DO IS
-    kToast =  [[KToast alloc]initWithKToastWithMessage:@"This is KToast! and this looks nice here!" withFontName:@"Helvetica-Bold" withFontSize:14 showAtHeight:location.y];
-     
-    [kToast show];
+
+    [KToast kToastWithMessage:@"This is KToast! and this looks nice here!" withFontName:@"Helvetica-Bold"
+                 withFontSize:14
+                 showAtHeight:location.y];
     
 }
 
